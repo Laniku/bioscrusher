@@ -1,0 +1,10 @@
+[package]
+name = "bioscrusher"
+version = "0.1.0"
+edition = "2021"
+
+[target.'cfg(windows)'.dependencies]
+is_elevated = "0.1.2"
+
+[target.'cfg(unix)'.dependencies]
+sudo = "0.6.0"
